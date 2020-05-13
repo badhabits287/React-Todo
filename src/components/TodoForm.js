@@ -27,7 +27,7 @@ class TodoForm extends React.Component {
                 <input 
                     type="text"
                     name="task"
-                    checked='false'
+                    
                     value={this.state.newTaskText}
                     onChange={this.handleChanges}
                 />

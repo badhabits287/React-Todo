@@ -8,10 +8,10 @@ const TodoList = props => {
    
     return(
         <div className="todo-list">
-            {props.tasks.map(task => (
+            {props.tasks.map((task,index) => (
                 <Todo
                     toggleComplete={props.toggleComplete}
-                    key={Math.random('')}
+                    key={index}
                     task={task}
                 />
             ))}
